@@ -2,7 +2,7 @@ from flask import render_template, url_for, flash, redirect, request
 from app import app, db, bcrypt, Reg_Form
 from flask_security import Security, SQLAlchemySessionUserDatastore, UserMixin, RoleMixin, login_required, roles_required
 from flask_security.forms import RegisterForm, LoginForm
-from sn_app.models import User, Role
+from app.models import User, Role
 from flask_admin import Admin, BaseView, expose, AdminIndexView
 from flask_admin.contrib.sqla import ModelView
 from flask_login import current_user, login_user
