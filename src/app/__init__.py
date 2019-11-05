@@ -30,11 +30,11 @@ db = SQLAlchemy(app)
 # mail = Mail(app)
 # Bootstrap(app)
 
-@app.before_first_request
-def create_user():
-    init_db()
-    user_datastore.create_user(email='matt@nobien.net', password='password')
-    db_session.commit()
+# @app.before_first_request
+# def create_user():
+#     init_db()
+#     user_datastore.create_user(email='matt@nobien.net', password='password')
+#     db_session.commit()
 
 class Reg_Form(RegisterForm):
 	username = StringField('User Name')
